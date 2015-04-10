@@ -1,0 +1,215 @@
+/*
+ *  SoturiyARTS
+ *  Styles
+ *  Version 1.0
+*/
+
+/* GLOBAL */
+*, *:before, *:after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* HEADER incl. Navbar */
+.site_header{
+    background: url(../img/landscape.jpg) center center fixed;
+    background-color: grey;
+    height: 80vh;
+    position: relative;
+    border-bottom: 2px solid #e74c3c;
+}
+.site_header h1{
+    float: left;
+    text-transform: lowercase;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+.site_header h1 strong{
+    font-weight: bold;
+    text-shadow: 1.5px 1.5px grey;
+}
+.site_header nav {
+    float: right;
+    margin-top: 0.5em;
+}
+.site_header nav ul{
+    list-style: none;
+    display: block;
+}
+.site_header nav ul li{
+    float: left;   
+}
+.site_header nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1em;
+}
+.site_header h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 0.5em;
+    border-bottom: 2px dashed white;
+}
+
+/* SERVICES */
+.site_services{
+    position: relative;
+    background: #ffffff;
+    min-height: 100vh;
+}
+.big_heading{
+    font-size: 5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2c3e50;
+    text-align: center;
+    padding: 1em;
+}
+.site_services article{
+    color: #2c3e50;
+    padding: 2em;
+}
+.site_services h3{
+    height: 90px;
+    width: 90px;
+    background: #e74c3c;
+    border-radius: 10px;
+    position: relative;
+}
+.left{
+    float: left;
+    margin-right: 2%;
+}
+.right{
+    float: right;
+    margin-left: 2%;
+}
+.site_services h3 .border{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 3em;
+    color: #ffffff;
+}
+.site_services .heading-left{
+    font-weight: bold;
+    text-align: right;
+    font-size: 1.5em;
+    padding: 0.2em;
+    text-transform: uppercase;
+}
+.site_services .heading-right{
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.5em;
+    padding: 0.2em;
+    text-transform: uppercase;
+}
+.site_services .text-left{
+    margin-top: 0.2em;
+    font-size: 1em;
+    text-align: right;
+}
+.site_services .text-right{
+    margin-top: 0.2em;
+    font-size: 1em;
+    text-align: left;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 651px){
+    .site_services h3 {
+        float: none;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+    .site_services .text-right{
+        text-align: left;
+    }
+    .site_services .text-left{
+        text-align: left;
+    }
+    .site_services .heading-left{
+        text-align: center;
+    }
+    .site_services .heading-right{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 640px){
+    .big_heading{
+        font-size: 4em;
+    }
+}
+@media screen and (max-width: 540px){
+    .big_heading{
+        font-size: 3em;
+    }
+}
+@media screen and (max-width: 435px){
+    .big_heading{
+        font-size: 2em;
+    }
+}
+
+/* PORTFOLIO */
+.site_portfolio{
+    background: #ecf0f1;
+    min-height: 100vh;
+}
+.site_portfolio article{
+    padding: 1em;
+}
+.site_portfolio article img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* CONTACT */
+.site_contact{
+    background: url(../img/landscape.jpg) center center fixed;
+    background-color: grey;
+    min-height: 50vh;
+    position: relative;
+    border-bottom: 2px solid #e74c3c;
+    text-align: center;
+}
+.site_contact h2{
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+}
+.site_contact a{
+    position: absolute;
+    background: #e74c3c;
+    padding: 1em;
+    border-radius: 10px;
+    font-size: 1em;
+    color: #2c3e50;
+    text-transform: uppercase;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+}
+.site_contact a:hover{
+    background: #2c3e50;
+    color: #e74c3c;
+}
