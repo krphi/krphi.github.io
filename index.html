@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/grid.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/ionicons.css" />
     
     <!-- JS -->
@@ -21,149 +22,183 @@
 
 <body>
     <!-- HEADER incl. NAVBAR (Name + Navi) -->
-    <div class="row site_header">
-        <div class="container">
-            <header class="small-2 medium-6 large-12 columns">
-                <!-- Navbar -->
-                <h1>Soturiy<strong>ARTS</strong></h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-                <!-- Teaser -->
-                <h2>HIER STEHT DANN EIN KLEINER, ABER FEINER, TEASER.</h2>
-            </header>
-        </div>
+    <div id="home" class="row site_header">
+    	<div class="container">
+    		<header class="small-1 medium-2 large-10 columns">
+    			<!-- NAVBAR -->
+    			<h1>so<strong>arts</strong></h1>
+    			<nav>
+    				<ul>
+    					<li><a href="#home">home</a></li>
+    					<li><a href="#service">leistungen</a></li>
+    					<li><a href="#portfolio">portfolio</a></li>
+    					<li><a href="#contact">kontakt</a></li>
+    				</ul>
+    			</nav>
+
+    			<!-- TEASER -->
+    			<h2>hier steht dann ein cooler teasertext</h2>
+    		</header>
+    	</div>
     </div>
-    
+
     <!-- SERVICES -->
-    <div class="row site_services">
-        <div class="container">
-            <!-- Title -->
-            <h2 class="small-2 medium-6 large-12 columns big_heading">OUR SERVICES</h2>
-            <!-- #1 -->
-            <article class="small-2 medium-3 large-6 columns">
-                <h3 class="right"><i class="icon ion-image border"></i></h3>
-                <h4 class="heading-left">Designing</h4>
-                <p class="text-left">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-            </article>
-            <!-- #2 -->
-            <article class="small-2 medium-3 large-6 columns">
-                <h3 class="left"><i class="icon ion-erlenmeyer-flask border"></i></h3>
-                <h4 class="heading-right">Developing</h4>
-                <p class="text-right">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-            </article>
-            <!-- #3 -->
-            <article class="small-2 medium-3 large-6 columns">
-                <h3 class="right"><i class="icon ion-ipad border"></i></h3>
-                <h4 class="heading-left">Mobile-First</h4>
-                <p class="text-left">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-            </article>
-            <!-- #4 -->
-            <article class="small-2 medium-3 large-6 columns">
-                <h3 class="left"><i class="icon ion-search border"></i></h3>
-                <h4 class="heading-right">SEO</h4>
-                <p class="text-right">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-            </article>
-        </div>
+    <div id="service" class="row site_service">
+    	<div class="container">
+    		<div class="small-1 medium-2 large-10 columns">
+    			<!-- HEADING -->
+    			<h1 class="small-1 medium-2 large-10 columns heading">
+    				LEISTUNGEN
+    				<span class="border"></span>
+    			</h1>
+
+    			<!-- SERVICES -->
+    			<article class="small-1 medium-1 large-5 columns">
+    				<div class="service_icon">
+    					<i class="icon ion-paintbrush serv"></i>
+    				</div>
+    				<h2>DESIGN</h2>
+    				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+    			</article>
+    			<article class="small-1 medium-1 large-5 columns">
+    				<div class="service_icon">
+    					<i class="icon ion-erlenmeyer-flask serv"></i>
+    				</div>
+    				<h2>ENTWICKLUNG</h2>
+    				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+    			</article>
+    			<article class="small-1 medium-1 large-5 columns">
+    				<div class="service_icon">
+    					<i class="icon ion-grid serv"></i>
+    				</div>
+    				<h2>RESPONSIVE</h2>
+    				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+    			</article>
+    			<article class="small-1 medium-1 large-5 columns">
+    				<div class="service_icon">
+    					<i class="icon ion-iphone serv"></i>
+    				</div>
+    				<h2>MOBILEFIRST</h2>
+    				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+    			</article>
+    			<article class="small-1 medium-1 large-5 columns">
+    				<div class="service_icon">
+    					<i class="icon ion-android-search serv"></i>
+    				</div>
+    				<h2>SEO</h2>
+    				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+    			</article>
+    			<article class="small-1 medium-1 large-5 columns">
+    				<div class="service_icon">
+    					<i class="icon ion-eye serv"></i>
+    				</div>
+    				<h2>CORPORATE</h2>
+    				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+    			</article>
+    		</div>
+    	</div>
     </div>
-    
-    <!-- 
-    
+
+    <!-- WORKFLOW -->
+    <div class="row site_workflow">
+    	<div class="container">
+    		<div class="small-1 medium-2 large-10 columns">
+	    		<!-- 2. HEADING -->
+	    		<h2 class=="small-1 medium-2 large-10 columns">WORKFLOW</h2>
+
+	    		<!-- FLOW -->
+	    		<div class="small-1 medium-2 large-10 columns">
+	    			<!-- start -->
+	    			<div class="small-1 medium-2 large-1 columns">
+	    				<div class="arrow_down">&#8659;</div>
+	    			</div>
+	    			<!-- idea -->
+	    			<article class="small-1 medium-2 large-1 columns">
+	    				<h3>IDEE</h3>
+	    			</article>
+	    			<!-- arrow -->
+	    			<div class="small-1 medium-2 large-1 columns">
+	    				<div class="arrow_down">&#8659;</div>
+	    			</div>
+	    			<!-- concept -->
+	    			<article class="small-1 medium-2 large-1 columns">
+	    				<h3>KONZEPT</h3>
+	    			</article>
+	    			<!-- arrow -->
+	    			<div class="small-1 medium-2 large-1 columns">
+	    				<div class="arrow_down">&#8659;</div>
+	    			</div>
+	    			<!-- programming -->
+	    			<article class="small-1 medium-2 large-1 columns">
+	    				<h3>UMSETZUNG</h3>
+	    			</article>
+	    			<!-- arrow -->
+	    			<div class="small-1 medium-2 large-1 columns">
+	    				<div class="arrow_down">&#8659;</div>
+	    			</div>
+	    			<!-- launch -->
+	    			<article class="small-1 medium-2 large-1 columns">
+	    				<h3>LAUNCH</h3>
+	    			</article>
+	    		</div>
+	    	</div>
+    	</div>
+    </div>
+
     <!-- PORTFOLIO -->
-    <div class="row site_portfolio">
-        <div class="container">
-            <h3 class="small-2 medium-6 large-12 columns big_heading">OUR PORTFOLIO</h3>
-            <!-- #1 -->
-            <article class="small-1 medium-2 large-3 columns">
-                <img src="img/portfolio/portfolio_1.jpg" alt="Dynamix eSports - Screendesign" />
-            </article>
-            <!-- #2 -->
-            <article class="small-1 medium-2 large-3 columns">
-                <img src="img/portfolio/portfolio_2.jpg" alt="Test - Screendesign" />
-            </article>
-            <!-- #3 -->
-            <article class="small-1 medium-2 large-3 columns">
-                <img src="img/portfolio/portfolio_3.jpg" alt="TEAM.GSXH - Screendesign" />
-            </article>
-            <!-- #4 -->
-            <article class="small-1 medium-2 large-3 columns">
-                <img src="img/portfolio/portfolio_4.jpg" alt="Dynamix eSports - Screendesign" />
-            </article>
-            <!-- #5 -->
-            <article class="small-1 medium-2 large-3 columns">
-                <img src="img/portfolio/portfolio_5.jpg" alt="Dynamix eSports - Screendesign" />
-            </article>
-            <!-- #6 -->
-            <article class="small-1 medium-2 large-3 columns">
-                <img src="img/portfolio/portfolio_6.png" alt="Dynamix eSports - Screendesign" />
-            </article>
-            <!-- #7 -->
-            <article class="small-1 medium-2 large-3 columns">
-                <img src="img/portfolio/portfolio_7.jpg" alt="Dynamix eSports - Screendesign" />
-            </article>
-            <!-- #8 -->
-            <article class="small-1 medium-2 large-3 columns">
-                <img src="img/portfolio/portfolio_8.jpg" alt="Dynamix eSports - Screendesign" />
-            </article>
-        </div>
+    <div id="portfolio" class="row site_portfolio">
+    	<div class="container">
+    		<!-- HEADING -->
+    		<h1 class="small-1 medium-2 large-10 columns heading">PORTFOLIO</h1>
+
+    		<!-- WORK 1 -->
+    		<div class="small-1 medium-2 large-10 columns">
+    			<article class="small-1 medium-1 large-5 columns">HEADING + TEXT</article>
+    			<div class="small-1 medium-1 large-5 columns">IMAGE</div>
+    		</div>
+
+    		<!-- WORK 2 -->
+    		<div class="small-1 medium-2 large-10 columns">
+    			<div class="small-1 medium-1 large-5 columns">IMAGE</div>
+    			<article class="small-1 medium-1 large-5 columns">HEADING + TEXT</article>
+    		</div>
+
+    		<!-- WORK 3 -->
+    		<div class="small-1 medium-2 large-10 columns">
+    			<article class="small-1 medium-1 large-5 columns">HEADING + TEXT</article>
+    			<div class="small-1 medium-1 large-5 columns">IMAGE</div>
+    		</div>
+    	</div>
     </div>
-    
-    <!-- Kontakt -->
-    <div class="row site_contact">
-        <div class="container">
-            <section class="small-2 medium-6 large-12 columns">
-                <h2>INTERESSE GEWECKT ?</h2>
-                <a>Konaktieren Sie uns!</a>
-            </section>
-        </div>
+
+    <!-- CONTACT -->
+    <div id="contact" class="row site_contact">
+    	<div class="container">
+    		<div class="small-1 medium-2 large-10 columns">
+    			<h2 class="small-1 medium-2 large-10 columns">KONTAKT</h2>
+    			<a class="small-1 medium-2 large-10 columns button" href="#">SEND</a>
+    		</div>
+    	</div>
     </div>
-    
-    <!-- Pre Footer -->
-    <div class="row site_prefooter">
-        <div class="container">
-            <!-- About SoturiyARTS -->
-            <article class="small-2 medium-3 large-6 columns about">
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-            </article>
-            <!-- Testemonials -->
-            <article class="small-2 medium-3 large-6 columns quote">
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-            </article>
-        </div>
-    </div>
-    
-    <!-- Footer -->
+
+    <!-- FOOTER -->
     <div class="row site_footer">
-        <div class="container">
-            <footer class="small-2 medium-6 large-12 columns">
-                <!-- Copyright -->
-                <article class="small-2 medium-2 large-4 columns">
-                	<h2>&copy; Copyright by SoturiyARTS</h2>
-                </article>
-                <!-- Social Media -->
-                <section class="small-2 medium-2 large-4 columns">
-                	<a href="#"><div class="social"><i class="icon ion-social-octocat socialicon"></i></div></a>
-                	<a href="#"><div class="social"><i class="icon ion-social-facebook socialicon"></i></div></a>
-                	<a href="#"><div class="social"><i class="icon ion-social-twitter socialicon"></i></div></a>
-                	<a href="#"><div class="social"><i class="icon ion-social-pinterest socialicon"></i></div></a>
-                </section>
-                <!-- Sitemap -->
-                <nav class="small-2 medium-2 large-4 columns">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Leistungen</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Kontakt</a></li>
-                        <li><a href="#">Impressum</a></li>
-                    </ul>
-                </nav>
-            </footer>
-        </div>
+    	<div class="container">
+    		<footer class="small-1 medium-2 large-10 columns">
+    			<!-- COPYRIGHT -->
+    			<h2 class="small-1 medium-2 large-5 columns">&copy; Copyright by so<strong>arts</strong></h2>
+
+    			<!-- SOCIAL -->
+    			<nav class="small-1 medium-2 large-5 columns">
+    				<ul>
+    					<li><a href="#">ICON</a></li>
+    					<li><a href="#">ICON</a></li>
+    					<li><a href="#">ICON</a></li>
+    				</ul>
+    			</nav>
+    		</footer>
+    	</div>
     </div>
+    
 </body>
 </html>
