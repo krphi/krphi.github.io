@@ -18,6 +18,22 @@
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/modernizr-dev.js"></script>
+    <script>
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                }, 1000);
+            return false;
+            }
+            }
+         });
+        });
+    </script>
 </head>
 
 <body>
@@ -107,48 +123,56 @@
 	    		<h2 class=="small-1 medium-2 large-10 columns">WORKFLOW</h2>
 
 	    		<!-- FLOW -->
-	    		<div class="small-1 medium-2 large-10 columns">
-	    			<!-- start -->
-	    			<div class="small-1 medium-2 large-1 columns">
-	    				<div class="arrow_down">&#8659;</div>
-                        <div class="arrow_right">&#8658;</div>
-	    			</div>
-	    			<!-- idea -->
-	    			<article class="small-1 medium-2 large-1 columns">
-	    				<i class="icon ion-ios-lightbulb workflow_icon"></i>
-                        <h3>IDEE</h3>
-	    			</article>
-	    			<!-- arrow -->
-	    			<div class="small-1 medium-2 large-1 columns">
-	    				<div class="arrow_down">&#8659;</div>
-                        <div class="arrow_right">&#8658;</div>
-	    			</div>
-	    			<!-- concept -->
-	    			<article class="small-1 medium-2 large-1 columns">
-	    				<i class="icon ion-image workflow_icon"></i>
-                        <h3>KONZEPT</h3>
-	    			</article>
-	    			<!-- arrow -->
-	    			<div class="small-1 medium-2 large-1 columns">
-	    				<div class="arrow_down">&#8659;</div>
-                        <div class="arrow_right">&#8658;</div>
-	    			</div>
-	    			<!-- programming -->
-	    			<article class="small-1 medium-2 large-1 columns">
-                        <i class="icon ion-code workflow_icon"></i>
-	    				<h3>UMSETZUNG</h3>
-	    			</article>
-	    			<!-- arrow -->
-	    			<div class="small-1 medium-2 large-1 columns">
-	    				<div class="arrow_down">&#8659;</div>
-                        <div class="arrow_right">&#8658;</div>
-	    			</div>
-	    			<!-- launch -->
-	    			<article class="small-1 medium-2 large-1 columns">
-                        <i class="icon ion-paper-airplane workflow_icon"></i>
-	    				<h3>LAUNCH</h3>
-	    			</article>
-	    		</div>
+	    		<div class="small-1 medium-2 large-10 columns flow">
+                    <ul>
+                        <li>
+                            <div class="icon_li">
+                                <i class="icon ion-lightbulb"></i>
+                            </div>
+                            IDEE
+                        </li>
+                        <li>
+                            <div class="arrow_down">&darr;</div>
+                            <div class="arrow_right">&rarr;</div>
+                        </li>
+                        <li>
+                            <div class="icon_li">
+                                <i class="icon ion-clipboard"></i>
+                            </div>
+                            KONZEPT
+                        </li>
+                        <li>
+                            <div class="arrow_down">&darr;</div>
+                            <div class="arrow_right">&rarr;</div>
+                        </li>               
+                        <li>
+                            <div class="icon_li">
+                                <i class="icon ion-images"></i>
+                            </div>
+                            PROTOTYPEN
+                        </li>
+                        <li>
+                            <div class="arrow_down">&darr;</div>
+                            <div class="arrow_right">&rarr;</div>
+                        </li>
+                        <li>
+                            <div class="icon_li">
+                                <i class="icon ion-code"></i>
+                            </div>
+                            PROGRAMMIERUNG
+                        </li>                        
+                        <li>
+                            <div class="arrow_down">&darr;</div>
+                            <div class="arrow_right">&rarr;</div>
+                        </li>
+                        <li>
+                            <div class="icon_li">
+                                <i class="icon ion-paper-airplane"></i>
+                            </div>
+                            LAUNCH
+                        </li>
+                    </ul>   
+                </div>
 	    	</div>
     	</div>
     </div>
@@ -157,24 +181,46 @@
     <div id="portfolio" class="row site_portfolio">
     	<div class="container">
     		<!-- HEADING -->
-    		<h1 class="small-1 medium-2 large-10 columns heading">PORTFOLIO</h1>
+    		<!-- HEADING -->
+                <h1 class="small-1 medium-2 large-10 columns heading">
+                    PORTFOLIO
+                    <span class="border"></span>
+                </h1>
 
     		<!-- WORK 1 -->
     		<div class="small-1 medium-2 large-10 columns">
-    			<article class="small-1 medium-1 large-5 columns">HEADING + TEXT</article>
-    			<div class="small-1 medium-1 large-5 columns">IMAGE</div>
+    			<article class="small-1 medium-1 large-5 columns">
+                    <h2>DYNAMIX ESPORTS</h2>
+                    <p>Bei Dynamix eSports handelt es sich um einen profesionellen Clan in der Counter Strike - Szene.
+                    Wir arbeiten schon seit längerem mit der Leitung des Teams zusammen und sind jetzt zum zweiten Mal zuständig für die neue Homepage. Unsere Aufgabe war die Erstellung des Homepage-Designs, ohne die Anpassung.</p>
+                </article>
+    			<div class="small-1 medium-1 large-5 columns portfolio_img">
+                    <img src="img/portfolio/portfolio_1.jpg" alt="Portfolio_1">
+                </div>
     		</div>
 
     		<!-- WORK 2 -->
     		<div class="small-1 medium-2 large-10 columns">
-    			<div class="small-1 medium-1 large-5 columns">IMAGE</div>
-    			<article class="small-1 medium-1 large-5 columns">HEADING + TEXT</article>
-    		</div>
+                <article class="small-1 medium-1 large-5 columns push">
+                    <h2>DYNAMIX ESPORTS</h2>
+                    <p>Bei Dynamix eSports handelt es sich um einen profesionellen Clan in der Counter Strike - Szene.
+                    Wir arbeiten schon seit längerem mit der Leitung des Teams zusammen und sind jetzt zum zweiten Mal zuständig für die neue Homepage. Unsere Aufgabe war die Erstellung des Homepage-Designs, ohne die Anpassung.</p>         
+                </article>
+                <div class="small-1 medium-1 large-5 columns portfolio_img">
+                    <img src="img/portfolio/portfolio_1.jpg" alt="Portfolio_1">
+                </div>
+            </div>
 
     		<!-- WORK 3 -->
     		<div class="small-1 medium-2 large-10 columns">
-    			<article class="small-1 medium-1 large-5 columns">HEADING + TEXT</article>
-    			<div class="small-1 medium-1 large-5 columns">IMAGE</div>
+    			<article class="small-1 medium-1 large-5 columns">
+                    <h2>DYNAMIX ESPORTS</h2>
+                    <p>Bei Dynamix eSports handelt es sich um einen profesionellen Clan in der Counter Strike - Szene.
+                    Wir arbeiten schon seit längerem mit der Leitung des Teams zusammen und sind jetzt zum zweiten Mal zuständig für die neue Homepage. Unsere Aufgabe war die Erstellung des Homepage-Designs, ohne die Anpassung.</p>        
+                </article>
+    			<div class="small-1 medium-1 large-5 columns portfolio_img">
+                    <img src="img/portfolio/portfolio_1.jpg" alt="Portfolio_1">
+                </div>
     		</div>
     	</div>
     </div>
